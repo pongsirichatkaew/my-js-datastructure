@@ -85,6 +85,15 @@ class LinkList {
     return this.printList();
   }
 
+  remove(index) {
+    // check params
+    const leader = this.traverseToIndex(index - 1);
+    const unwantedNode = leader.next;
+    leader.next = unwantedNode.next;
+    this.length--;
+    return this.printList();
+  }
+
   traverseToIndex(index) {
     //check params
     let counter = 0;
@@ -103,5 +112,6 @@ console.log(myLinkedList.append(16));
 console.log(myLinkedList.prepend(1));
 console.log(myLinkedList.insert(200, 99));
 console.log(myLinkedList.insert(3, 33));
+console.log(myLinkedList.remove(3));
 // console.log(myLinkedList.printList());
 // console.log('myLinkedList', myLinkedList);
