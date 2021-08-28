@@ -1,0 +1,11 @@
+Single Linked List 
+-Less Memory
+    a little bit faster
+-More easy
+-Use when you want fast insertion and deletion and you dont really have much searching 
+
+Double Linked List
+-Can do a search from a front to a back (prev)
+-Complex and require more memory
+-Do more when insertion and deletion
+-better when searching
