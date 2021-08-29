@@ -81,23 +81,14 @@ class LinkedList {
     }
 
     let first = this.head;
-    console.log('first', first);
     this.tail = this.head;
-    console.log('tail', this.tail);
     let second = first.next;
-    console.log('second', second);
     // while second exists (have a next node)
-    let count = 1;
-
     while (second) {
       const temp = second.next; // 3,4,5
-      console.log(`temp ${count}`, temp);
       second.next = first; // second.next => 1
       first = second; //  10 next1 1 next10
-      console.log(`first ${count}`, first);
       second = temp; // 10 next1 5 next16 88 next null
-      console.log(`second ${count}`, second);
-      count++;
     }
 
     this.head.next = null;
