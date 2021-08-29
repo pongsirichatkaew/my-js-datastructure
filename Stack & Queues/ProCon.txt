@@ -1,0 +1,7 @@
+Pros:
+-Fast operation
+-Fast peek
+-Orderd
+
+Cons:
+-Slow lookup
