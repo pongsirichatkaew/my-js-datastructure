@@ -1,0 +1,7 @@
+Pro:
+-Better than O(n)
+-Ordered
+-Flexible Size
+
+Cons:
+-No O(1) operation
