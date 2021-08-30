@@ -13,24 +13,21 @@ function mergeSortedArrays(arr1, arr2) {
   let array1Item = arr1[0];
   let array2Item = arr2[0];
   let i = 1;
-  let j = 1;
 
   while (array1Item || array2Item) {
-    console.log(array1Item, array2Item, i);
-    if (!array2Item || array1Item < array2Item) {
+    if ( array1Item < array2Item) {
       mergedArray.push(array1Item);
       array1Item = arr1[i];
-      i++;
       console.log('array1Item', array1Item);
     } else {
       mergedArray.push(array2Item);
-      array2Item = arr2[j];
-      j++;
+      array2Item = arr2[i];
     }
+    i++;
+    console.log('index', i);
+    return
   }
 
-  return mergedArray;
+  return mergedArrayF;
 }
-const arr = mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]);
-console.log('merged', arr);
-console.log('ans', undefined > '1');
+mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]);
