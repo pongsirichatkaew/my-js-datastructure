@@ -1,0 +1,7 @@
+Anything you do with recursion CAN be done iteratively (loop)
+
+// Pros
+DRY
+Readability
+// Cons
+Large Stack
