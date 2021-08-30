@@ -1,0 +1,5 @@
+Pros:
+-useful when become relationship
+-finding a shortest path
+Cons:
+-scailing is hard
