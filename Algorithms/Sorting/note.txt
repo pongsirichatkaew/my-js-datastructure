@@ -1,0 +1,19 @@
+Quick Sort
+- Pivot and smaller go to left
+- Larger go to right
+
+When to use sorting
+-Insertion sort
+    - only few items and mostly sorted
+-Bubble sort
+    - for education only not very efficient
+-Selection sort
+    - for education only not very efficient
+-Merge sort
+    - for most case
+    - Divide and Conqour O(n log (n))
+    - use O(n) space complexity
+-Quick sort
+    - less complexity O(log (n))
+    - if you pick wrong pivot it can be O(n^2) => pivot is smallest or largest
+    
